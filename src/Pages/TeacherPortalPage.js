@@ -4,6 +4,10 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
+import { Bar, Doughnut } from 'react-chartjs-2';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend } from 'chart.js';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend);
 
 const style = {
   position: "absolute",
@@ -59,6 +63,45 @@ export const TeacherPortalPage = () => {
     }
 
     setStudentDetails([...studentDetails, data]);
+  };
+
+  const barData = {
+    labels: studentDetails.map(student => student.name),
+    datasets: [
+      {
+        label: 'Marks',
+        data: studentDetails.map(student => student.marks),
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  const doughnutData = {
+    labels: studentDetails.map(student => student.subject),
+    datasets: [
+      {
+        label: 'Subjects',
+        data: studentDetails.map(student => student.marks),
+        backgroundColor: [
+          '#FF6384',
+          '#36A2EB',
+          '#FFCE56',
+          '#4BC0C0',
+          '#9966FF',
+          '#FF9F40'
+        ],
+        hoverBackgroundColor: [
+          '#FF6384',
+          '#36A2EB',
+          '#FFCE56',
+          '#4BC0C0',
+          '#9966FF',
+          '#FF9F40'
+        ]
+      }
+    ]
   };
 
   return (
@@ -142,6 +185,20 @@ export const TeacherPortalPage = () => {
           </form>
         </Box>
       </Modal>
+      
+      <div style={{ marginTop: "30px" }}>
+        <Typography variant="h5" component="h3">
+          Student Performance
+        </Typography>
+        <Bar data={barData} />
+      </div>
+      
+      <div style={{ marginTop: "30px" }}>
+        <Typography variant="h5" component="h3">
+          Subject Distribution
+        </Typography>
+        <Doughnut data={doughnutData} />
+      </div>
     </>
   );
 };
