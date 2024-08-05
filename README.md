@@ -67,10 +67,7 @@ Figma: https://www.figma.com/design/IBG2cOGlDsYyOxl6SPJOVD/Untitled?node-id=0-1&
   <h2>Contribution</h2>
   <p>Contributions are welcome! Feel free to submit issues or pull requests. Please ensure you follow the code of conduct and contribution guidelines.</p>
 
-  <h2>License</h2>
-  <p>This project is licensed under the MIT License. For more information, please refer to the <a href="LICENSE">LICENSE</a> file.</p>
-
   <h2>Contact</h2>
-  <p>For any questions or inquiries, please contact [Your Name] at [Your Email].</p>
+  <p>For any questions or inquiries, please contact Mani Teja at manitejapro38@gmail.com.</p>
 </body>
 </html>
