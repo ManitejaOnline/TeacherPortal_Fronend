@@ -1,33 +1,4 @@
 Figma: https://www.figma.com/design/IBG2cOGlDsYyOxl6SPJOVD/Untitled?node-id=0-1&m=dev&t=Yj9nrpvZeA1W2P4H-1
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TeacherPortal_Frontend README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      color: #333;
-    }
-    pre {
-      background-color: #f4f4f4;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    code {
-      background-color: #f4f4f4;
-      padding: 2px 5px;
-      border-radius: 3px;
-    }
-  </style>
-</head>
 <body>
   <h1>TeacherPortal_Frontend</h1>
   <p>Welcome to the <strong>TeacherPortal_Frontend</strong> project! This repository contains the frontend code for a teacher portal application, designed to manage student information, subjects, and marks.</p>
